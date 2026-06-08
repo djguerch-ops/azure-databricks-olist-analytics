@@ -10,7 +10,7 @@ The solution ingests raw e-commerce data from the Brazilian Olist dataset, appli
 
 ## Architecture
 
-![Architecture](images/architecture.png)
+![Architecture](images/Architecture.png)
 
 ### Technology Stack
 
