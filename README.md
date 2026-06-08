@@ -85,8 +85,11 @@ Main entities:
 
 ### Bronze Layer
 
-## Auto Loader Incremental Ingestion
+### Batch ingestion 
+The first loadig method is batch 
 
+## Auto Loader Incremental Ingestion
+The seconde loadig method is auto loader: 
 The project includes an Auto Loader implementation using Databricks CloudFiles.
 
 Features:
@@ -215,6 +218,7 @@ azure-databricks-olist-analytics/
 │   ├── 02_silver_transformation_seller.py
 │   ├── 02_silver_transformation_category_translation.py
 │   └── 03_gold_sales_analytics.py
+    └── 04_autoloader_bronze_ingestion.py
 │
 ├── images/
 │   ├── architecture.png
@@ -246,6 +250,8 @@ azure-databricks-olist-analytics/
 * Data Quality
 * Data Modeling
 * Data Transformation
+* Auto Loader (CloudFiles)
+* Incremental Processing
 
 ### Analytics
 
@@ -253,17 +259,7 @@ azure-databricks-olist-analytics/
 * KPI Design
 * Dashboarding
 
----
 
-## Future Improvements
-
-* Auto Loader
-* Delta Live Tables
-* Incremental Processing
-* CI/CD with GitHub Actions
-* Automated Data Quality Monitoring
-
----
 
 ## Author
 
