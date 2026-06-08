@@ -85,7 +85,26 @@ Main entities:
 
 ### Bronze Layer
 
-Raw CSV files are ingested from ADLS Gen2 and stored as Delta Tables.
+## Auto Loader Incremental Ingestion
+
+The project includes an Auto Loader implementation using Databricks CloudFiles.
+
+Features:
+
+- Incremental file ingestion
+- Checkpoint management
+- Automatic schema tracking
+- Delta Lake integration
+
+Architecture:
+
+ADLS Gen2
+→ Auto Loader
+→ Bronze Delta Tables
+
+A simulation was performed by splitting the orders dataset into multiple files and ingesting them incrementally.
+
+Only newly arrived files were processed thanks to checkpoint tracking.
 
 Tables:
 
